@@ -82,8 +82,10 @@ echo "export GRAPHVIZ_DOT=/app/$install_dir/usr/bin/dot" >>"$script"
 
 #/app/heroku-buildpack-graphviz/usr/bin/dot -c
 
-echo "here is app dir"
-ls -lah /app
+echo "here is app dir bin"
+ls -lah /app/bin/
+echo "here is app dir lib"
+ls -lah /app/bin/
 echo "Successfully installed Graphviz $graphviz_version" | a
 echo "Verify installation with \"heroku run dot -V\"" | i
 echo
