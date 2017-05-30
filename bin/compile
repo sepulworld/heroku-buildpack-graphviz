@@ -80,7 +80,6 @@ echo "export GRAPHVIZ_DOT=/app/$install_dir/usr/bin/dot" >>"$script"
 ((${#packages[@]} > 1)) &&
   echo "export LD_LIBRARY_PATH=/app/$install_dir/usr/lib:\$LD_LIBRARY_PATH" >>"$script"
 
-/app/$install_dir/usr/bin/dot -c
 echo "Successfully installed Graphviz $graphviz_version" | a
 echo "Verify installation with \"heroku run dot -V\"" | i
 echo
